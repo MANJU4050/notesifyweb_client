@@ -1,0 +1,54 @@
+.avathar {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #813aff !important;
+  border-color: #813afe !important;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #813aff !important;
+  border-color: #5b11da !important;
+}
+
+.contain {
+  margin-top: 60px;
+}
+
+.last {
+  text-align: left;
+  margin-top: 10px;
+}
+
+h3 {
+  color: #0d8836;
+}
+
+.login {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 400px;
+}
+
+.duo {
+  color: red;
+}
+
+.form {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 600px;
+}
+
+.logininner {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 50px;
+}
