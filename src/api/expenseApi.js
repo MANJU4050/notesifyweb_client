@@ -1,33 +1,33 @@
 import axios from "axios";
 const token = localStorage.getItem("token");
-const expenseApi = axios.create({
+const noteApi = axios.create({
   baseURL: "https://boiling-mesa-88989.herokuapp.com/",
   headers: { authtoken: token },
 });
 
-export const viewExpenseApi = async () => {
+export const viewNotesApi = async () => {
   console.log(token);
-  const response = await expenseApi.get("api/viewexpense");
+  const response = await noteApi.get("api/viewnotes");
   console.log(response.data);
   return response.data;
 };
 
-export const addExpenseApi = async (expense) => {
-  const response = await expenseApi.post("/api/addexpense", expense, {
+export const addNoteApi = async (note) => {
+  const response = await noteApi.post("/api/addnote", note, {
     header: { authtoken: token },
   });
   return response;
 };
 
-export const updateExpenseApi = async (expense) => {
-  const response = await expenseApi.patch("/api/updateexpense", expense, {
+export const updateNoteApi = async (note) => {
+  const response = await noteApi.patch("/api/updatenote", note, {
     header: { authtoken: token },
   });
   return response;
 };
 
-export const deleteExpenseApi = async (id) => {
-  const response = await expenseApi.delete(`/api/deleteexpense/${id}`, {
+export const deleteNoteApi = async (noteid) => {
+  const response = await noteApi.delete(`/api/deletenote/${noteid}`,{
     header: { authtoken: token },
   });
   return response;
