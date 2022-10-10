@@ -1,8 +1,5 @@
-import axios from "axios";
 import { createSlice } from "@reduxjs/toolkit";
-import { createAsyncThunk } from "@reduxjs/toolkit";
-import { viewNotesApi } from "../../api/notesApi";
-import noteApi from "../../api/notesApi";
+
 
 
 
