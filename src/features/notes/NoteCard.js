@@ -13,7 +13,13 @@ import IconButton from "@mui/material/IconButton";
 import Tooltip from "@mui/material/Tooltip";
 import "./NoteCard.css";
 
+
+
+
 const NoteCard = ({ edit, noteid, title, note, date, important }) => {
+
+ 
+
   const navigate = useNavigate();
 
   const update = () => {

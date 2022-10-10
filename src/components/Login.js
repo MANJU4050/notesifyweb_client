@@ -12,6 +12,7 @@ const initialValues = {
 };
 
 const Login = () => {
+
   const navigate = useNavigate();
   const { values, errors, touched, handleBlur, handleChange, handleSubmit } =
     useFormik({
@@ -20,7 +21,7 @@ const Login = () => {
       onSubmit: async (values, action) => {
         try {
           const response = await axios.post(
-            "https://boiling-mesa-88989.herokuapp.com/auth/login",
+            "https://boiling-mesa-88989.herokuapp.com",
             values
           );
 

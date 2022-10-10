@@ -16,9 +16,10 @@ function App() {
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<AddView />} />
           <Route path="updatenote/:noteid" element={<Updatenote />} />
-          <Route path="display" element={<ViewNote />} />
+          <Route path="viewnotes" element={<ViewNote />} />
+          
         </Route>
-        <Route path="*" element={<ErrorPage/>} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>
   );
